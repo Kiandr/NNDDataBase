@@ -34,7 +34,7 @@
  ToDo:
 
  */
-- (instancetype)initWithNNDCheckInModel: (NNDCheckInModel*) model{
+- (instancetype)initWithNNDCheckInModel: (NNDDataBaseModel*) model{
     self = [super init];
     if (self) {
 /*

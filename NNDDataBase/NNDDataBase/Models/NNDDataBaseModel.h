@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import "NNDCheckInService.h"
+#import "NNDDataBaseService.h"
 @interface NNDDataBaseModel : NSObject
 
 @property (strong, nonatomic) UIView* NNDCheckInUIView;

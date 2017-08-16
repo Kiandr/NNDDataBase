@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "NNDCheckInController.h"
+#import "NNDDataBaseController.h"
 
 @implementation NNDDataBaseController: NSObject
 
