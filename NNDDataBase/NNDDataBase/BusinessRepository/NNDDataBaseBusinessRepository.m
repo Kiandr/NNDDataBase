@@ -10,15 +10,6 @@
 
 @interface NNDDataBaseBusinessRepository()
 
-- (NSURL*)applicationDocumentsDirectory;
-
-- (NSManagedObjectModel*)managedObjectModel ;
-
-- (NSPersistentStoreCoordinator*)persistentStoreCoordinator ;
-
-- (NSManagedObjectContext*)managedObjectContext ;
-
-- (void)saveContext ;
 
 @end
 
@@ -122,5 +113,28 @@
     }
 }
 
+
+#pragma Test Database
+/*
+- (void)AddPerson {
+
+    Employee* item = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_appDelegate.managedObjectContext];
+    //[item setValue:@"Kian" forKey:@"name"];
+
+    [item setValue:@"6043581753" forKey:@"phone"];
+    [item setValue:@"Kian" forKey:@"name"];
+
+    [_appDelegate saveContext];
+
+}
+-(void)fetch{
+    NSFetchRequest *fetchRequest =
+    [[NSFetchRequest alloc] initWithEntityName:@"Employee"];
+    self.employeeCollection = [[_appDelegate.managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    Employee *item = [_employeeCollection objectAtIndex:(unsigned long)self.employeeCollection.count-1];
+    NSLog(@"count=%ld", (unsigned long)self.employeeCollection.count);
+    NSLog(@"%@",item);
+}
+*/
 
 @end

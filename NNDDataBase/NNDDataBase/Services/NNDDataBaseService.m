@@ -29,10 +29,20 @@
     self = [super init];
     if (self) {
 
-        _businessRepository = [[NNDDataBaseBusinessRepository alloc] init];;
+        _businessRepository = [[NNDDataBaseBusinessRepository alloc] init];
     }
     return self;
 }
 
+
+- (NSURL*)applicationDocumentsDirectory{return [_businessRepository applicationDocumentsDirectory];}
+
+- (NSManagedObjectModel*)managedObjectModel {return [_businessRepository managedObjectModel];}
+
+- (NSPersistentStoreCoordinator*)persistentStoreCoordinator {return [_businessRepository persistentStoreCoordinator];}
+
+- (NSManagedObjectContext*)managedObjectContext {return [_businessRepository managedObjectContext];}
+
+- (void)saveContext {return [_businessRepository saveContext];}
 
 @end

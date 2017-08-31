@@ -17,4 +17,15 @@
 
 - (void)saveContext;
 
+#pragma  DataBase Methods
+
+- (NSURL*)applicationDocumentsDirectory;
+
+- (NSManagedObjectModel*)managedObjectModel ;
+
+- (NSPersistentStoreCoordinator*)persistentStoreCoordinator ;
+
+- (NSManagedObjectContext*)managedObjectContext ;
+
+- (void)saveContext ;
 @end

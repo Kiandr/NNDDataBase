@@ -9,13 +9,23 @@
 #import <Foundation/Foundation.h>
 #import "NNDDataBaseController.h"
 
+#include "NNDDataBaseService.h"
+
+///NNDDataBaseService
+
+@interface NNDDataBaseController()
+
+
+@property (strong, nonatomic) NNDDataBaseService *service;
+@end
+
 @implementation NNDDataBaseController: NSObject
 
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-
+        _service = [[NNDDataBaseService alloc]init];
 
     }
     return self;
@@ -25,6 +35,7 @@
 
     NSLog(@"-(void) HelloDepenecyIntegrationNNDCheckInController;");
 }
+
 
 @end
 
