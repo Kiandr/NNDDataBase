@@ -16,7 +16,7 @@
 @property (strong, nonatomic) UIView* NNDCheckInUIView;
 @property (strong, nonatomic) UIButton* NNDCheckInUIButton;
 @property (assign, nonatomic) id NNDCheckInUIButtonCallBackFunction;
-@property (assign, nonatomic) NNDCheckInService* NNDCheckInService;
+
 
 
 @end

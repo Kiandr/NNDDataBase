@@ -6,3 +6,23 @@
  */
 
 #import <UIKit/UIKit.h>
+#include "NNDDataBaseBusinessRepository.h"
+
+@interface NNDDataBaseBusinessRepository()
+
+@end
+
+
+@implementation NNDDataBaseBusinessRepository:NSObject
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+
+
+    }
+    return self;
+}
+
+
+@end

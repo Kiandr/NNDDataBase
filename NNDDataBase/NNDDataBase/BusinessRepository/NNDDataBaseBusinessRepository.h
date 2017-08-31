@@ -6,6 +6,9 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 
+@interface NNDDataBaseBusinessRepository : NSObject
 
+@end

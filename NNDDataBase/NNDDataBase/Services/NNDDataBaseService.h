@@ -13,7 +13,7 @@
 
 @end
 
-@interface NNDCheckInService : NSObject<NNDDataBaseServiceProtocolDelegate>
+@interface NNDDataBaseService : NSObject<NNDDataBaseServiceProtocolDelegate>
 
 @property (strong, nonatomic) id<NNDDataBaseServiceProtocolDelegate> delegate;
 
