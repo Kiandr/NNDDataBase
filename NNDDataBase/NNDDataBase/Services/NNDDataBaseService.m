@@ -10,6 +10,17 @@
 
 @interface NNDDataBaseService()
 
+- (NSURL*)applicationDocumentsDirectory;
+
+- (NSManagedObjectModel*)managedObjectModel ;
+
+- (NSPersistentStoreCoordinator*)persistentStoreCoordinator ;
+
+- (NSManagedObjectContext*)managedObjectContext ;
+
+- (void)saveContext ;
+
+
 @end
 
 @implementation NNDDataBaseService:NSObject
@@ -18,7 +29,7 @@
     self = [super init];
     if (self) {
 
-
+        _businessRepository = [[NNDDataBaseBusinessRepository alloc] init];;
     }
     return self;
 }

@@ -85,8 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				2EB1AC9E1F35275B0075D09D /* NNDDataBase */,
-				2EB1ACA91F35275B0075D09D /* NNDDataBaseTests */,
 				2EB1AC9D1F35275B0075D09D /* Products */,
+				2EB1ACA91F35275B0075D09D /* NNDDataBaseTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,11 +102,11 @@
 		2EB1AC9E1F35275B0075D09D /* NNDDataBase */ = {
 			isa = PBXGroup;
 			children = (
-				2EB1ACBA1F3539DF0075D09D /* BusinessRepository */,
 				2EB1ACBD1F3539DF0075D09D /* Controllers */,
+				2EB1ACC41F3539DF0075D09D /* Services */,
+				2EB1ACBA1F3539DF0075D09D /* BusinessRepository */,
 				2EB1ACC01F3539DF0075D09D /* Info.plist */,
 				2EB1ACC11F3539DF0075D09D /* Models */,
-				2EB1ACC41F3539DF0075D09D /* Services */,
 			);
 			path = NNDDataBase;
 			sourceTree = "<group>";
