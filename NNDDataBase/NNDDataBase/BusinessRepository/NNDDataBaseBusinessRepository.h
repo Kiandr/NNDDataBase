@@ -15,7 +15,7 @@
 @property (strong, nonatomic) NSManagedObjectModel         *managedObjectModel;
 @property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-- (void)saveContext;
+//- (void)saveContext;
 
 #pragma  DataBase Methods
 
@@ -28,4 +28,8 @@
 - (NSManagedObjectContext*)managedObjectContext ;
 
 - (void)saveContext ;
+
+- (void)AddPerson;
+
+- (void)fetch;
 @end

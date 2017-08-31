@@ -17,8 +17,9 @@
 @interface NNDDataBaseService : NSObject<NNDDataBaseServiceProtocolDelegate>
 
 @property (strong, nonatomic) id<NNDDataBaseServiceProtocolDelegate> delegate;
-@property (strong , nonatomic) NNDDataBaseBusinessRepository *businessRepository;
 
+- (void)AddPerson;
+- (void)fetch;
 @end
 
 

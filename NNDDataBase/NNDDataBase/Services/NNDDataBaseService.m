@@ -10,6 +10,8 @@
 
 @interface NNDDataBaseService()
 
+@property (strong , nonatomic) NNDDataBaseBusinessRepository *businessRepository;
+
 - (NSURL*)applicationDocumentsDirectory;
 
 - (NSManagedObjectModel*)managedObjectModel ;
@@ -44,5 +46,9 @@
 - (NSManagedObjectContext*)managedObjectContext {return [_businessRepository managedObjectContext];}
 
 - (void)saveContext {return [_businessRepository saveContext];}
+
+- (void)AddPerson{[_businessRepository AddPerson];}
+
+- (void)fetch { [_businessRepository fetch];}
 
 @end

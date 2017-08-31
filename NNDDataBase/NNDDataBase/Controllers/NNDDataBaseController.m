@@ -31,9 +31,12 @@
     return self;
 }
 
--(void) HelloDepenecyIntegrationNNDCheckInController{
+-(void) HelloDataBaseController{
 
     NSLog(@"-(void) HelloDepenecyIntegrationNNDCheckInController;");
+    [_service AddPerson];
+    [_service fetch];
+
 }
 
 

@@ -20,4 +20,7 @@ FOUNDATION_EXPORT const unsigned char NNDDataBaseVersionString[];
 
 @interface NNDDataBaseController:NSObject
 
+-(void) HelloDataBaseController;
+
+- (void)fetch;
 @end

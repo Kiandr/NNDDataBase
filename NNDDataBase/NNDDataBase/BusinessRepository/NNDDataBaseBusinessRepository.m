@@ -7,8 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #include "NNDDataBaseBusinessRepository.h"
+#include "Employee.h"
 
 @interface NNDDataBaseBusinessRepository()
+@property (retain,nonatomic) NSMutableArray *
+employeeCollection;
 
 
 @end
@@ -18,6 +21,10 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        
+        _managedObjectContext = [self managedObjectContext];
+        _managedObjectModel = [self managedObjectModel];
+        _persistentStoreCoordinator = [self persistentStoreCoordinator];
 
 
     }
@@ -46,7 +53,7 @@
 
 - (NSManagedObjectModel*)managedObjectModel {
 
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CoreDataHelloWorld" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"Employee" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -56,7 +63,7 @@
     //store
 
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CoreDataHelloWorld.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"NNDDataBase.sqlite"];
 
     NSError *error = nil;
 
@@ -115,26 +122,27 @@
 
 
 #pragma Test Database
-/*
+
 - (void)AddPerson {
 
-    Employee* item = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_appDelegate.managedObjectContext];
+    NSObject* item = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_managedObjectContext];
     //[item setValue:@"Kian" forKey:@"name"];
 
     [item setValue:@"6043581753" forKey:@"phone"];
     [item setValue:@"Kian" forKey:@"name"];
 
-    [_appDelegate saveContext];
+    [self saveContext];
 
 }
+
 -(void)fetch{
     NSFetchRequest *fetchRequest =
     [[NSFetchRequest alloc] initWithEntityName:@"Employee"];
-    self.employeeCollection = [[_appDelegate.managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    self.employeeCollection = [[[self managedObjectContext] executeFetchRequest:fetchRequest error:nil] mutableCopy];
     Employee *item = [_employeeCollection objectAtIndex:(unsigned long)self.employeeCollection.count-1];
     NSLog(@"count=%ld", (unsigned long)self.employeeCollection.count);
     NSLog(@"%@",item);
 }
-*/
+
 
 @end
