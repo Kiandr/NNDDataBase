@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E7816A01F6081FA004866C0 /* NNDDataBaseStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E78169F1F6081FA004866C0 /* NNDDataBaseStrings.strings */; };
+		2E7816A21F60834E004866C0 /* NNDCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7816A11F60834E004866C0 /* NNDCommon.framework */; };
 		2EA5AA8E1F589FA600F88FA8 /* Employee.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EA5AA8C1F589FA600F88FA8 /* Employee.h */; };
 		2EA5AA8F1F589FA600F88FA8 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA5AA8D1F589FA600F88FA8 /* Employee.m */; };
-		2EA5AA921F589FD700F88FA8 /* Employee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EA5AA901F589FD700F88FA8 /* Employee.xcdatamodeld */; };
+		2EA5AA921F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EA5AA901F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodeld */; };
 		2EA5AA9E1F58C74200F88FA8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA5AA9A1F58C6F900F88FA8 /* CoreData.framework */; };
 		2EB1ACA61F35275B0075D09D /* NNDDataBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB1AC9C1F35275B0075D09D /* NNDDataBase.framework */; };
 		2EB1ACAB1F35275B0075D09D /* NNDDataBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1ACAA1F35275B0075D09D /* NNDDataBaseTests.m */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E78169F1F6081FA004866C0 /* NNDDataBaseStrings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = NNDDataBaseStrings.strings; path = Resources/NNDDataBaseStrings.strings; sourceTree = "<group>"; };
+		2E7816A11F60834E004866C0 /* NNDCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NNDCommon.framework; path = "../../../../Library/Developer/Xcode/DerivedData/nursenextdoor-dizvvwoqcatogrbnsfpukgecohvf/Build/Products/Debug-iphonesimulator/NNDCommon.framework"; sourceTree = "<group>"; };
 		2EA5AA8C1F589FA600F88FA8 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		2EA5AA8D1F589FA600F88FA8 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
-		2EA5AA911F589FD700F88FA8 /* Employee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Employee.xcdatamodel; sourceTree = "<group>"; };
+		2EA5AA911F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NNDCheckInDataModel.xcdatamodel; sourceTree = "<group>"; };
 		2EA5AA981F58C6F400F88FA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2EA5AA9A1F58C6F900F88FA8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2EA5AA9C1F58C70300F88FA8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7816A21F60834E004866C0 /* NNDCommon.framework in Frameworks */,
 				2EA5AA9E1F58C74200F88FA8 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +86,7 @@
 			children = (
 				2EA5AA8C1F589FA600F88FA8 /* Employee.h */,
 				2EA5AA8D1F589FA600F88FA8 /* Employee.m */,
-				2EA5AA901F589FD700F88FA8 /* Employee.xcdatamodeld */,
+				2EA5AA901F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodeld */,
 			);
 			path = EmployeeModel;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 		2EA5AA971F58C6F300F88FA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E7816A11F60834E004866C0 /* NNDCommon.framework */,
 				2EA5AA9C1F58C70300F88FA8 /* CoreFoundation.framework */,
 				2EA5AA9A1F58C6F900F88FA8 /* CoreData.framework */,
 				2EA5AA981F58C6F400F88FA8 /* Foundation.framework */,
@@ -123,6 +129,7 @@
 				2EB1ACBA1F3539DF0075D09D /* BusinessRepository */,
 				2EB1ACC01F3539DF0075D09D /* Info.plist */,
 				2EB1ACC11F3539DF0075D09D /* Models */,
+				2E78169F1F6081FA004866C0 /* NNDDataBaseStrings.strings */,
 			);
 			path = NNDDataBase;
 			sourceTree = "<group>";
@@ -272,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EB1ACCB1F3539DF0075D09D /* Info.plist in Resources */,
+				2E7816A01F6081FA004866C0 /* NNDDataBaseStrings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EA5AA921F589FD700F88FA8 /* Employee.xcdatamodeld in Sources */,
+				2EA5AA921F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodeld in Sources */,
 				2EA5AA8F1F589FA600F88FA8 /* Employee.m in Sources */,
 				2EB1ACCD1F3539DF0075D09D /* NNDDataBaseModel.m in Sources */,
 				2EB1ACCF1F3539DF0075D09D /* NNDDataBaseService.m in Sources */,
@@ -363,6 +371,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon\"/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -408,6 +417,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon\"/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -430,6 +440,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDDataBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon/NNDCommon\"/**";
 			};
 			name = Debug;
 		};
@@ -448,6 +460,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDDataBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon/NNDCommon\"/**";
 			};
 			name = Release;
 		};
@@ -506,13 +520,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2EA5AA901F589FD700F88FA8 /* Employee.xcdatamodeld */ = {
+		2EA5AA901F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2EA5AA911F589FD700F88FA8 /* Employee.xcdatamodel */,
+				2EA5AA911F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodel */,
 			);
-			currentVersion = 2EA5AA911F589FD700F88FA8 /* Employee.xcdatamodel */;
-			path = Employee.xcdatamodeld;
+			currentVersion = 2EA5AA911F589FD700F88FA8 /* NNDCheckInDataModel.xcdatamodel */;
+			path = NNDCheckInDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #include "NNDDataBaseBusinessRepository.h"
 #include "Employee.h"
+#include "NNDPatientDataModel.h"
 
 @interface NNDDataBaseBusinessRepository()
 @property (retain,nonatomic) NSMutableArray *
@@ -53,7 +54,7 @@ employeeCollection;
 
 - (NSManagedObjectModel*)managedObjectModel {
 
-    NSURL *modelURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"Employee" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle bundleForClass:[self class]] URLForResource:NSLocalizedString(@"NNDCheckInDataModel", nil) withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
