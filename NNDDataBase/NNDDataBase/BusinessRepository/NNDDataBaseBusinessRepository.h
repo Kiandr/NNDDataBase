@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+#include "NNDPatientDataModel.h"
+#include "NNDDeviceUserDataModel.h"
+
 @interface NNDDataBaseBusinessRepository : NSObject
 
 @property (strong, nonatomic) NSManagedObjectContext       *managedObjectContext;
@@ -32,4 +35,12 @@
 - (void)AddPerson;
 
 - (void)fetch;
+
+#pragma Test methods, adding patinet and Device user data base inquery
+
+-(NNDPatientDataModel*) PatiendModelDataInitWithUserId:(NNDDeviceUserDataModel*) deviceUserDataModel;
+- (NNDDeviceUserDataModel*) NNDDeviceUserDataModelWithGoogleGSuitTool:(NNDDeviceUserDataModel*) deviceUserDataModel;
+- (void) addOnePatinetDataIntoTheUserFile;
+- (void) addOneUserDataModelInDataBase;
+
 @end

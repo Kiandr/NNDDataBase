@@ -7,7 +7,11 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+
 #include "NNDDataBaseBusinessRepository.h"
+#include "NNDPatientDataModel.h"
+#include "NNDDeviceUserDataModel.h"
+
 @protocol NNDDataBaseServiceProtocolDelegate <NSObject>
 
 
@@ -20,6 +24,12 @@
 
 - (void)AddPerson;
 - (void)fetch;
+
+#pragma Testing local database; adding patient and device data
+- (void) addOnePatinetDataIntoTheUserFile;
+- (void) addOneUserDataModelInDataBase;
+- (NNDPatientDataModel*) PatiendModelDataInitWithUserId:(NNDDeviceUserDataModel*) deviceUserDataModel;
+- (NNDDeviceUserDataModel*) NNDDeviceUserDataModelWithGoogleGSuitTool:(NNDDeviceUserDataModel*) deviceUserDataModel;
 @end
 
 

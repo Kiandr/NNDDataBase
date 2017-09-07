@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+#include "NNDPatientDataModel.h"
+#include "NNDDeviceUserDataModel.h"
+
 
 //! Project version number for NNDDataBase.
 FOUNDATION_EXPORT double NNDDataBaseVersionNumber;
@@ -22,5 +25,13 @@ FOUNDATION_EXPORT const unsigned char NNDDataBaseVersionString[];
 
 -(void) HelloDataBaseController;
 
-- (void)fetch;
+
+#pragma Testing local database; adding patient and device data
+- (void) addOnePatinetDataIntoTheUserFile;
+- (void) addOneUserDataModelInDataBase;
+-(NNDPatientDataModel*) PatiendModelDataInitWithUserId:(NNDDeviceUserDataModel*) deviceUserDataModel;
+-(NNDDeviceUserDataModel*) NNDDeviceUserDataModelWithGoogleGSuitTool:(NNDDeviceUserDataModel*) deviceUserDataModel;
+
+
+
 @end

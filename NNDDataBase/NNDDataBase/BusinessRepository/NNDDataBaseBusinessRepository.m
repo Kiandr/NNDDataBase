@@ -9,6 +9,7 @@
 #include "NNDDataBaseBusinessRepository.h"
 #include "Employee.h"
 #include "NNDPatientDataModel.h"
+#include "NNDDeviceUserDataModel.h"
 
 @interface NNDDataBaseBusinessRepository()
 @property (retain,nonatomic) NSMutableArray *
@@ -143,6 +144,51 @@ employeeCollection;
     Employee *item = [_employeeCollection objectAtIndex:(unsigned long)self.employeeCollection.count-1];
     NSLog(@"count=%ld", (unsigned long)self.employeeCollection.count);
     NSLog(@"%@",item);
+}
+
+
+#pragma Manage Patient DataModel
+
+- (NNDPatientDataModel*) PatiendModelDataInitWithUserId:(NNDDeviceUserDataModel*) deviceUserDataModel{
+
+    NNDDeviceUserDataModel * t = [[NNDDeviceUserDataModel alloc]init];
+    return nil;
+}
+- (NNDDeviceUserDataModel*) NNDDeviceUserDataModelWithGoogleGSuitTool:(NNDDeviceUserDataModel*) deviceUserDataModel{return nil;}
+
+#pragma TestPatientData
+
+// Test the code: Demo purpose:
+/*
+ Author: Kian D.Rad
+ Date: Sept 6th 2017
+ README: 
+ 1- Build a ptient 
+ 2- 
+ 
+
+ */
+
+
+-(void) addOnePatinetDataIntoTheUserFile{
+
+    NSObject* item = [NSEntityDescription insertNewObjectForEntityForName:NSLocalizedString(@"NNDPatientDataModel", nil) inManagedObjectContext:_managedObjectContext];
+
+    [item setValue:@"M." forKey:@"patientLastName"];
+    [item setValue:@"Margaret" forKey:@"patientName"];
+
+    [self saveContext];
+}
+
+-(void) addOneUserDataModelInDataBase{
+
+    NSObject* item = [NSEntityDescription insertNewObjectForEntityForName:NSLocalizedString(@"NNDDeviceUserDataModel", nil) inManagedObjectContext:_managedObjectContext];
+
+    [item setValue:@"M." forKey:@"patientLastName"];
+    [item setValue:@"Margaret" forKey:@"patientName"];
+
+    [self saveContext];
+
 }
 
 

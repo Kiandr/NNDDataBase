@@ -81,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E10F75B1F60ABE1005F19D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E78169F1F6081FA004866C0 /* NNDDataBaseStrings.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2EA5AA8B1F589FA600F88FA8 /* EmployeeModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,12 +132,12 @@
 		2EB1AC9E1F35275B0075D09D /* NNDDataBase */ = {
 			isa = PBXGroup;
 			children = (
+				2E10F75B1F60ABE1005F19D8 /* Resources */,
 				2EB1ACBD1F3539DF0075D09D /* Controllers */,
 				2EB1ACC41F3539DF0075D09D /* Services */,
 				2EB1ACBA1F3539DF0075D09D /* BusinessRepository */,
 				2EB1ACC01F3539DF0075D09D /* Info.plist */,
 				2EB1ACC11F3539DF0075D09D /* Models */,
-				2E78169F1F6081FA004866C0 /* NNDDataBaseStrings.strings */,
 			);
 			path = NNDDataBase;
 			sourceTree = "<group>";

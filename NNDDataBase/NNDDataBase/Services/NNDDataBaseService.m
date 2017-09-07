@@ -51,4 +51,11 @@
 
 - (void)fetch { [_businessRepository fetch];}
 
+#pragma testing - Adding Patient and Device user fake data
+- (void) addOnePatinetDataIntoTheUserFile{return [_businessRepository addOnePatinetDataIntoTheUserFile];};
+- (void) addOneUserDataModelInDataBase{return [_businessRepository addOneUserDataModelInDataBase];};
+
+-(NNDDeviceUserDataModel*) NNDDeviceUserDataModelWithGoogleGSuitTool:(NNDDeviceUserDataModel*) deviceUserDataModel{ return [_businessRepository NNDDeviceUserDataModelWithGoogleGSuitTool:deviceUserDataModel];}
+
+
 @end
