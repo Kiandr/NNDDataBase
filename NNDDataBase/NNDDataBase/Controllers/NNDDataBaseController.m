@@ -22,7 +22,6 @@
 
 @implementation NNDDataBaseController: NSObject
 
-
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -31,7 +30,6 @@
     }
     return self;
 }
-
 - (void) HelloDataBaseController{
 
     NSLog(@"-(void) HelloDepenecyIntegrationNNDCheckInController;");
@@ -43,8 +41,7 @@
 - (void) addOnePatinetDataIntoTheUserFile{[_service addOnePatinetDataIntoTheUserFile];}
 - (void) addOneUserDataModelInDataBase{[_service addOneUserDataModelInDataBase];}
 - (NNDPatientDataModel*) PatiendModelDataInitWithUserId:(NNDDeviceUserDataModel*) deviceUserDataModel{return [_service PatiendModelDataInitWithUserId:deviceUserDataModel];}
-
--(NNDDeviceUserDataModel*) NNDDeviceUserDataModelWithGoogleGSuitTool:(NNDDeviceUserDataModel*) deviceUserDataModel{ return [_service NNDDeviceUserDataModelWithGoogleGSuitTool:deviceUserDataModel];}
+- (NNDDeviceUserDataModel*) NNDDeviceUserDataModelWithGoogleGSuitTool:(NNDDeviceUserDataModel*) deviceUserDataModel{ return [_service NNDDeviceUserDataModelWithGoogleGSuitTool:deviceUserDataModel];}
 
 
 @end
